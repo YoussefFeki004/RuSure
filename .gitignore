@@ -1,0 +1,71 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+*.egg-info/
+*.egg
+*.log
+*.tmp
+*.backup
+*.bak
+*.old
+
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.vite/
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Database
+*.db
+*.sqlite
+scan_history.json
+
+# Uploads (keep structure, not data)
+backend/uploads/*
+!backend/uploads/.gitkeep
+
+# Environment
+.env
+.env.local
+
+# Logs
+logs/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Backup
+*.backup
+*.bak
+*.old
+
+# Coverage
+coverage/
+*.cover
+
+# Pycache in root
+__pycache__/
+backend/__pycache__/
+frontend/__pycache__/

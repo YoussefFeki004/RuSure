@@ -1,0 +1,391 @@
+.finding-card {
+  background: #0a0e17;
+  border: 1px solid #1c2333;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.finding-card:hover {
+  border-color: #30363d;
+}
+
+.finding-card.expanded {
+  border-color: #58a6ff;
+}
+
+.finding-header {
+  padding: 16px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  background: #0d1117;
+}
+
+.finding-header:hover {
+  background: #161b22;
+}
+
+.finding-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #e6edf3;
+  flex: 1;
+  word-break: break-all;
+  padding-right: 12px;
+}
+
+.finding-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.finding-count {
+  font-size: 0.75rem;
+  color: #8b949e;
+}
+
+.expand-icon {
+  font-size: 0.9rem;
+  color: #8b949e;
+  transition: transform 0.3s ease;
+  display: inline-block;
+  margin-left: 4px;
+}
+
+.finding-card.expanded .expand-icon {
+  transform: rotate(0deg);
+}
+
+.finding-body {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.4, 0, 0.2, 1), padding 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  padding: 0 20px;
+}
+
+.finding-body.expanded {
+  max-height: 5000px;
+  opacity: 1;
+  padding: 20px;
+  border-top: 1px solid #1c2333;
+  background: #0d1117;
+}
+
+/* Info styles */
+.finding-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 0.9rem;
+  color: #8b949e;
+}
+
+.finding-info strong {
+  color: #e6edf3;
+}
+
+.finding-info span {
+  color: #8b949e;
+}
+
+/* Badge Styles */
+.badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.badge-tp, .badge-confirmed {
+  background: rgba(35, 134, 54, 0.2);
+  color: #3fb950;
+  border: 1px solid #238636;
+}
+
+.badge-fp {
+  background: rgba(218, 54, 51, 0.2);
+  color: #f85149;
+  border: 1px solid #da3633;
+}
+
+.badge-inc {
+  background: rgba(210, 153, 34, 0.2);
+  color: #d29922;
+  border: 1px solid #d29922;
+}
+
+/* Payload Table */
+.payloads-table-wrapper {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.payloads-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.payloads-table th {
+  text-align: left;
+  padding: 10px 12px;
+  color: #8b949e;
+  font-weight: 600;
+  border-bottom: 2px solid #1c2333;
+  background: #0d1117;
+}
+
+.payloads-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #1c2333;
+  vertical-align: middle;
+  color: #e6edf3;
+}
+
+.payloads-table .category {
+  color: #58a6ff;
+  font-weight: 500;
+}
+
+.payloads-table .payload {
+  font-family: 'Consolas', monospace;
+  color: #f0883e;
+  font-size: 0.7rem;
+  max-width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* Attempt Cards for XSS */
+.attempt-card {
+  border: 1px solid #1c2333;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: #0a0e17;
+  transition: all 0.2s ease;
+}
+
+.attempt-card:hover {
+  border-color: #30363d;
+}
+
+.attempt-header {
+  background: #0d1117;
+  padding: 10px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 1px solid #1c2333;
+}
+
+.attempt-header span {
+  color: #e6edf3;
+  font-weight: 500;
+}
+
+.attempt-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.attempt-badge {
+  font-size: 0.7rem;
+  color: #58a6ff;
+  background: rgba(31, 111, 235, 0.15);
+  padding: 2px 10px;
+  border-radius: 12px;
+}
+
+.screenshot-link {
+  color: #58a6ff;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.screenshot-link:hover {
+  text-decoration: underline;
+  color: #79c0ff;
+}
+
+.attempt-body {
+  padding: 16px;
+}
+
+.attempt-buttons {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.attempt-buttons .btn {
+  transition: all 0.2s ease;
+}
+
+.attempt-buttons .btn:hover {
+  transform: translateY(-1px);
+}
+
+.context-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.85rem;
+  color: #8b949e;
+  margin-bottom: 10px;
+  padding: 10px;
+  background: #0d1117;
+  border-radius: 6px;
+}
+
+.context-info span {
+  color: #8b949e;
+}
+
+.context-info .context-reason {
+  width: 100%;
+  color: #d29922;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.payload-injected {
+  margin-top: 8px;
+  padding: 10px 14px;
+  background: #1a0e00;
+  border: 1px solid #f0883e;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.payload-injected:hover {
+  border-color: #f0883e;
+  box-shadow: 0 0 20px rgba(240, 136, 62, 0.05);
+}
+
+.payload-injected strong {
+  color: #f0883e;
+  display: block;
+  margin-bottom: 4px;
+  font-size: 0.85rem;
+}
+
+.payload-injected pre {
+  margin: 0;
+  color: #f0883e;
+  font-family: 'Consolas', monospace;
+  font-size: 0.8rem;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.screenshot-preview {
+  margin-top: 10px;
+}
+
+.screenshot-preview img {
+  max-width: 100%;
+  border: 1px solid #1c2333;
+  border-radius: 4px;
+  max-height: 300px;
+  transition: all 0.3s ease;
+}
+
+.screenshot-preview img:hover {
+  border-color: #30363d;
+}
+
+/* Action Buttons */
+.action-buttons {
+  margin-bottom: 16px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 6px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-sm {
+  padding: 4px 12px;
+  font-size: 0.7rem;
+}
+
+.btn-secondary {
+  background: #1c2333;
+  color: #e6edf3;
+  border: 1px solid transparent;
+}
+
+.btn-secondary:hover {
+  background: #30363d;
+  transform: translateY(-1px);
+}
+
+.btn-success {
+  background: #1f6feb;
+  color: white;
+}
+
+.btn-success:hover {
+  background: #388bfd;
+  transform: translateY(-1px);
+}
+
+/* Verdict Box */
+.verdict-box {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .finding-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .finding-title {
+    font-size: 0.85rem;
+  }
+  .payloads-table .payload {
+    max-width: 120px;
+  }
+  .attempt-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

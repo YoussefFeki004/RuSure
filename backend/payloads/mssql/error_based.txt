@@ -1,0 +1,6 @@
+' AND 1=CONVERT(int,'SQLI_ERROR_TEST')-- -
+' AND 1=CAST('SQLI_ERROR_TEST' AS int)-- -
+' AND 1=CONVERT(int,@@version)-- -
+' AND 1=(SELECT CONVERT(int,'SQLI_ERROR_TEST'))-- -
+' AND (SELECT 1/0)-- -
+' AND 1=(SELECT 1/0)-- -

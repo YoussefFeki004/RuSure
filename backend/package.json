@@ -1,0 +1,10 @@
+{
+  "name": "rusure-backend",
+  "version": "1.0.0",
+  "description": "RuSure XSS Scanner dependencies",
+  "main": "xss_checker_v8.js",
+  "dependencies": {
+    "playwright": "^1.40.0",
+    "fast-xml-parser": "^4.3.0"
+  }
+}

